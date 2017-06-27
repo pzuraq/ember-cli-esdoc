@@ -1055,12 +1055,12 @@ broccoli-debug@^0.6.1, broccoli-debug@^0.6.2:
     symlink-or-copy "^1.1.8"
     tree-sync "^1.2.2"
 
-"broccoli-esdoc@https://github.com/pzuraq/broccoli-esdoc.git#fbaaab870cd0bb04c6e2591bc8a484f857bad3be":
+"broccoli-esdoc@https://github.com/pzuraq/broccoli-esdoc.git#93c5d0042fd751cec468fb01687c7f4e1aa447ea":
   version "0.0.1"
-  resolved "https://github.com/pzuraq/broccoli-esdoc.git#fbaaab870cd0bb04c6e2591bc8a484f857bad3be"
+  resolved "https://github.com/pzuraq/broccoli-esdoc.git#93c5d0042fd751cec468fb01687c7f4e1aa447ea"
   dependencies:
     broccoli-caching-writer "^3.0.3"
-    esdoc "1.0.0-alpha.7"
+    esdoc "https://github.com/pzuraq/esdoc.git#bcd3f55bada45f0555f491cc3789c4dc3970d703"
     merge "~1.2.0"
 
 broccoli-filter@^1.2.2, broccoli-filter@^1.2.3:
@@ -2401,6 +2401,10 @@ esdoc-external-ecmascript-plugin@latest:
   dependencies:
     fs-extra "1.0.0"
 
+esdoc-importpath-plugin@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/esdoc-importpath-plugin/-/esdoc-importpath-plugin-0.1.4.tgz#76ab7a01ad41e4a44374bb7f79daf5565548d604"
+
 esdoc-integrate-manual-plugin@latest:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/esdoc-integrate-manual-plugin/-/esdoc-integrate-manual-plugin-0.0.3.tgz#7c412d76ffdd68ad56b43641c05dfe6aa1d3b95a"
@@ -2416,6 +2420,18 @@ esdoc-lint-plugin@latest:
 esdoc-publish-html-plugin@latest:
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/esdoc-publish-html-plugin/-/esdoc-publish-html-plugin-0.0.11.tgz#d67799a2892517b0658f06f10de5d0d287de5137"
+  dependencies:
+    babel-generator "6.11.4"
+    cheerio "0.22.0"
+    escape-html "1.0.3"
+    fs-extra "1.0.0"
+    ice-cap "0.0.4"
+    marked "0.3.6"
+    taffydb "2.7.2"
+
+"esdoc-publish-module-html-plugin@https://github.com/pzuraq/esdoc-publish-module-html-plugin.git#520d767a8287339030aad392ff5889dd084ba4b9":
+  version "0.0.12"
+  resolved "https://github.com/pzuraq/esdoc-publish-module-html-plugin.git#520d767a8287339030aad392ff5889dd084ba4b9"
   dependencies:
     babel-generator "6.11.4"
     cheerio "0.22.0"
@@ -2453,9 +2469,9 @@ esdoc-unexported-identifier-plugin@latest:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/esdoc-unexported-identifier-plugin/-/esdoc-unexported-identifier-plugin-0.0.4.tgz#618dbc1346166119037fb38f3ac6a8a8287f85ff"
 
-esdoc@1.0.0-alpha.7:
+"esdoc@https://github.com/pzuraq/esdoc.git#bcd3f55bada45f0555f491cc3789c4dc3970d703":
   version "1.0.0-alpha.7"
-  resolved "https://registry.yarnpkg.com/esdoc/-/esdoc-1.0.0-alpha.7.tgz#d9670357dc7da64c4214561a01cc098679bc4c80"
+  resolved "https://github.com/pzuraq/esdoc.git#bcd3f55bada45f0555f491cc3789c4dc3970d703"
   dependencies:
     babel-generator "6.11.4"
     babel-traverse "6.12.0"

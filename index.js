@@ -8,15 +8,31 @@ const merge         = require('merge');
 
 const defaults = {
   config: {
-    plugins: [{
-      name: 'esdoc-ecmascript-proposal-plugin',
-      option: {
-        classProperties: true,
-        decorators: true
-      }
-    }, {
-      name: 'esdoc-standard-plugin'
-    }]
+    plugins: [
+      {
+        name: 'esdoc-ecmascript-proposal-plugin',
+        option: {
+          classProperties: true,
+          decorators: true
+        }
+      },
+      {
+        name: 'esdoc-importpath-plugin',
+        option: {
+          replaces: [
+            { from: '^addon/', to: '' },
+            { from: '\\..+$', to: '' }
+          ]
+        }
+      },
+      { name: 'esdoc-coverage-plugin' },
+      { name: 'esdoc-accessor-plugin' },
+      { name: 'esdoc-external-ecmascript-plugin'},
+      { name: 'esdoc-brand-plugin' },
+      { name: 'esdoc-unexported-identifier-plugin' },
+      { name: 'esdoc-integrate-manual-plugin' },
+      { name: 'esdoc-publish-module-html-plugin' }
+    ]
   }
 };
 
