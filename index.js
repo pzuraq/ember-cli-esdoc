@@ -31,7 +31,8 @@ const defaults = {
       { name: 'esdoc-brand-plugin' },
       { name: 'esdoc-unexported-identifier-plugin' },
       { name: 'esdoc-integrate-manual-plugin' },
-      { name: 'esdoc-publish-module-html-plugin' }
+      { name: 'esdoc-publish-module-html-plugin' },
+      { name: require.resolve('./lib/esdoc-function-macro-plugin') }
     ]
   }
 };
@@ -40,7 +41,7 @@ module.exports = {
   name: 'ember-cli-esdoc',
 
   included(app) {
-    this.options = merge(defaults, app.options.esdoc);
+    this.options = merge.recursive(defaults, app.options.esdoc);
 
     var cmdOpts = process.argv.slice(3);
     this.liveDocsEnabled = cmdOpts.indexOf('--docs') !== -1;
