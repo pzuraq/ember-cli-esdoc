@@ -811,11 +811,11 @@ babel-types@^6.10.2, babel-types@^6.19.0, babel-types@^6.24.1, babel-types@^6.25
     lodash "^4.2.0"
     to-fast-properties "^1.0.1"
 
-babylon@6.14.1:
+babylon@6.14.1, babylon@^6.7.0:
   version "6.14.1"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.14.1.tgz#956275fab72753ad9b3435d7afe58f8bf0a29815"
 
-babylon@^6.17.2, babylon@^6.7.0:
+babylon@^6.17.2:
   version "6.17.4"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.4.tgz#3e8b7402b88d22c3423e137a1577883b15ff869a"
 
@@ -2429,9 +2429,9 @@ esdoc-publish-html-plugin@latest:
     marked "0.3.6"
     taffydb "2.7.2"
 
-"esdoc-publish-module-html-plugin@https://github.com/pzuraq/esdoc-publish-module-html-plugin.git#520d767a8287339030aad392ff5889dd084ba4b9":
+"esdoc-publish-module-html-plugin@https://github.com/pzuraq/esdoc-publish-module-html-plugin.git#fa1c2dbb20521f5dc477a764ab03272fb74f7d37":
   version "0.0.12"
-  resolved "https://github.com/pzuraq/esdoc-publish-module-html-plugin.git#520d767a8287339030aad392ff5889dd084ba4b9"
+  resolved "https://github.com/pzuraq/esdoc-publish-module-html-plugin.git#fa1c2dbb20521f5dc477a764ab03272fb74f7d37"
   dependencies:
     babel-generator "6.11.4"
     cheerio "0.22.0"

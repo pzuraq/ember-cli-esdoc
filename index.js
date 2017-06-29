@@ -21,6 +21,7 @@ const defaults = {
         option: {
           replaces: [
             { from: '^addon/', to: '' },
+            { from: '/index\\..+$', to: '' },
             { from: '\\..+$', to: '' }
           ]
         }
